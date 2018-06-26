@@ -75,7 +75,7 @@ WHERE (nota_1 + nota_2 + nota_3 + nota_4 )/4 = (SELECT MAX((nota_1 + nota_2 + no
 
 SELECT nome,(nota_1 + nota_2 + nota_3 + nota_4)/4 'media'
 FROM alunos
-IF((nota_1 + nota_2 + nota_3 + nota_4)/4) ,10)
+AVG((nota_1 + nota_2 + nota_3 + nota_4)/4))
 
 
 
