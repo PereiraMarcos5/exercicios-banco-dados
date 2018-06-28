@@ -125,7 +125,44 @@ UPDATE alunos SET numero_favorito = RAND(12000)
 WHERE numero_favorito % 2 = 0  
 */
 
-UPDATE alunos SET 
+/*
+UPDATE alunos SET signo = 'Áries', numero_favorito = 100,
+ cor_preferida = 'preto', nome =  'Marcela'
+ WHERE signo LIKE 'Peixes'
+*/
+
+/*
+UPDATE alunos SET cor_preferida = 'Azul', nota_2 = 9.3
+WHERE cor_preferida LIKE 'cáqui'
+*/
+
+/*
+UPDATE alunos SET cpf = '101.947.311-89' WHERE cpf LIKE '10194731189'
+*/
+
+/*
+UPDATE alunos -- _________  -- WHERE nome LIKE '%Goes' 
+*/
+
+/*
+UPDATE alunos SET nota_1 = 1, nota_2 = 1, nota_3 = 1, nota_4 = 1
+WHERE ((nota_1 + nota_2 + nota_3 + nota_4)/4) < 4
+*/
+
+/*
+UPDATE alunos SET nick = 'Ninjutsu' WHERE nick LIKE 'Fueusn'
+*/
+
+/*
+UPDATE alunos SET nick = 'Dobermann', cor_preferida = 'rosa' WHERE nick = Saxiol
+*/
+
+--UPDATE alunos SET  data_nascimento = (YEAR(data_nascimento),month(data_nascimento),day(30))
+
+/*
+UPDATE alunos SET cor_preferida = 'Roxo', nick = 'Roxolândia'
+WHERE cor_preferida LIKE 'roxo' OR cor_preferida LIKE 'coral'
+*/
 
 
 -- SELECT * FROM alunos
